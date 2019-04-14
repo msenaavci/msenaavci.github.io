@@ -146,7 +146,8 @@ classification:
 
 the fix:
 ```js
-
+let x = {b:'e'};
+let y = b.e;
 ```
 your notes:
 
@@ -241,9 +242,14 @@ classification:
 
 the fix:
 ```js
-
+function getNine() {
+  let x = 6;
+  let y = 3;
+  return x + y;
+  }
+let result = getNine();
 ```
-your notes:
+your notes: in function, after the name you should use (). 
 
 [TOP](#errors)
 
@@ -263,7 +269,7 @@ classification:
 
 the fix:
 ```js
-
+let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
 ```
 your notes:
 
